@@ -120,7 +120,7 @@ func createMalformedArrayPayload() []byte {
 
 // createObjectSchema creates a json schema for validating object payloads
 func createObjectSchema() []byte {
-	return []byte(`{"$id":"TestArraySchema","type":"object","required":["veggieName","veggieLike"],"properties":{"veggieName":{"type":"string"},"veggieLike":{"type":"boolean"}}}`)
+	return []byte(`{"$id":"TestObjectSchema","type":"object","required":["veggieName","veggieLike"],"properties":{"veggieName":{"type":"string"},"veggieLike":{"type":"boolean"}}}`)
 }
 
 // createSuccessfulObjectPayload creates a json payload that successfully passes validation
